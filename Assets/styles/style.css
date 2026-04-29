@@ -38,6 +38,19 @@ body {
     background-color: var(--color4);
 }
 
+.box-red {
+    background-color: var(--color4);
+    padding: 12px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    color: var(--color3);
+    text-align: center;
+    flex-shrink: 0;
+    border-radius: 16px;
+}
+
 .general-index {
     z-index: 1;
 }
@@ -325,6 +338,25 @@ video {
     clip-path: polygon(80% 0%, 100% 20%, 100% 100%, 20% 100%, 0% 80%, 0 0);
 }
 
+/* Maps Section */
+.maps-img{
+    margin-top: 52px;
+    width: 100%;
+}
+
+.maps-section-top{
+    padding-top: 40px !important;
+}
+
+.nominal-maps-p{
+    font-size: 32px !important;
+    font-weight: var(--font-weight-bold);
+}
+
+.nominal-layout {
+    gap: 24px;
+    margin-left: auto; 
+}
 
 @media screen and (max-width: 1024px) {
     .mycontainer img{
