@@ -22,9 +22,9 @@ body {
 }
 
 .general-padding-t-b {
-  padding-top: 98px;
-  padding-bottom: 86px;
-  box-sizing: border-box;
+    padding-top: 98px;
+    padding-bottom: 86px;
+    box-sizing: border-box;
 }
 
 .general-flex-row{
@@ -211,6 +211,10 @@ video {
 
 
 /* Description Section */
+#desc-padding-b{
+    padding-bottom: 56px !important;
+}
+
 #desc-h1 {
     margin: 0px;
     margin-right: 48px;
@@ -221,7 +225,7 @@ video {
 
 #desc-img {
     align-items: center;
-    margin: 40px 0;
+    margin: 0px;
     gap: 8px;
     justify-content: space-between;
     width: 100%;
@@ -240,6 +244,9 @@ video {
     object-fit: cover;
     border-radius: 4px;
 }
+
+/* Product Section */
+
 
 
 @media screen and (max-width: 1024px) {
