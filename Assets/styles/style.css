@@ -1,0 +1,323 @@
+* {box-sizing: border-box;}
+
+body {
+    margin: 0px;
+    font-family: sans-serif;
+    --font-weight-light: 200;
+    --font-weight-regular: 400;
+    --font-weight-bold: 700;
+    --font-weight-extra-bold: 900;
+    --font-stencil: 'Saira Stencil One', sans-serif;
+    --font-outfit: 'Outfit', sans-serif;
+    --color1: #003E8B;
+    --color2: #030136;
+    --color3: white;
+    --color4: #F00117;
+    --color5: #C70119;
+}
+
+.general-padding-r-l {
+    padding-left: 6%;
+    padding-right: 6%;
+}
+
+.general-padding-t-b {
+  padding-top: 98px;
+  padding-bottom: 86px;
+  box-sizing: border-box;
+}
+
+.general-flex-row{
+    display:flex;
+}
+
+.general-flex-column{
+    display:flex;
+    flex-direction: column;
+}
+
+.btn-blue {
+    background-color: var(--color1) !important;
+    border-color: var(--color1) !important;
+}
+
+.btn-blue:hover {
+    background-color: var(--color2) !important;
+    border-color: var(--color2) !important;
+}
+
+.btn-red {
+    background-color: var(--color4) !important;
+    border-color: var(--color4) !important;
+}
+
+.btn-red:hover {
+    background-color: var(--color5) !important;
+    border-color: var(--color5) !important;
+}
+
+/*NAV SECTION*/
+nav {
+    position: fixed;
+    top: 0;
+    z-index: 99;
+    width: 100%;
+}
+
+nav ul {
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    list-style: none;
+    position: relative;
+    background-color: var(--color3);
+    padding: 10px 0px 10px 0px;
+    margin: 0px;
+}
+
+nav li {
+    justify-content: flex-End;
+    padding: 10px 0px 10px 0px;
+}
+
+nav a {
+  color: var(--color2);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {color: var(--color1)}
+
+.logo img {
+    height: 40px;
+    display: block;
+    object-fit: contain;
+}
+
+
+.menu, .telephone {
+    align-items: center;
+    gap: 8px;
+}
+
+.menu {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+.menu li {
+    padding: 30px;
+    font-size: 16px;
+}
+
+.menu li a {
+    font-family: var(--font-outfit);
+    font-weight: var(--font-weight-regular);
+    display: inline-block;
+    text-decoration: none;
+    color: var(--color2);
+    text-align: center;
+    transition: 0.15s ease-in-out;
+    position: relative;
+}
+
+.menu li a.active {
+    color: var(--color1);
+    font-family: var(--font-outfit);
+    font-weight: var(--font-weight-bold);
+}
+
+.menu li a:hover {color: var(--color1);}
+
+li.nav-actions {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+
+
+/*HERO SECTION*/
+.vid-fluid {
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    object-fit: cover;
+}
+
+video {
+    object-fit: contain;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+
+.video-wrapper {
+    position: relative;
+}
+
+.square {
+    top: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0.4;
+    position: absolute;
+    background-color: var(--color1);
+}
+
+#hero-text {
+    color: var(--color3);
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 48%;
+    transform: translateY(-50%);
+    width: 100%; 
+    height: auto;
+    gap: 0;
+}
+
+#hero-text h1, #product-text h1{
+    margin: 0px;
+    font-size: 74px;
+    font-family: var(--font-stencil);
+    font-weight: var(--font-weight-regular);
+}
+
+
+#hero-text h2, #product-text h2{
+    margin: 0px;
+    font-size: 28px;
+    font-family: var(--font-outfit);
+    font-weight: var(--font-weight-bold);
+}
+
+#hero-text p, #product-text p{
+    margin: 0px;
+    font-size: 24px;
+    font-family: var(--font-outfit);
+    font-weight: var(--font-weight-light);
+}
+
+#hero-text a, #product-text a{
+    margin: 0px;
+    font-size: 20px;
+    margin-top: 32px;
+    font-family: var(--font-outfit);
+    font-weight: var(--font-weight-light);
+}
+
+
+/* Description Section */
+#desc-h1 {
+    margin: 0px;
+    margin-right: 48px;
+    font-size: 56px;
+    font-family: var(--font-stencil);
+    font-weight: var(--font-weight-regular);
+}
+
+#desc-img {
+    align-items: center;
+    margin: 40px 0;
+    gap: 8px;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#desc-img .img-side {
+    flex: 1;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+#desc-img .img-center {
+    flex: 1.5;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+
+@media screen and (max-width: 1024px) {
+    .mycontainer img{
+        width: 400px;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 956px) {
+    /* #signindisable {display: none;}
+
+    div.mycontainer {flex-direction: column;}
+
+    .mycontainer img{
+        width: 600px;
+        align-items: center;
+    } */
+}
+
+@media screen and (max-width: 870px) {
+    /* .menu {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        z-index: 100;
+        background-color: var(--color3);
+        transition: all 0.2s ease-in-out;
+    }
+    .menu li {margin-top: 40px;}
+    .menu li a {padding: 10px;}
+    .open-menu , .close-menu {display: block;}
+    #check:checked ~ .menu {left: 0;}
+
+    #signindisable {display: none;}
+
+
+    div.mycontainer {flex-direction: column;}
+
+    .mycontainer img{
+        width: 600px;
+        align-items: center;
+    } */
+}
+
+@media screen and (max-width: 600px) {
+    /* .buttonred, .buttonborderred  {
+        padding: 6px;
+        font-size: small;
+    }
+
+    #signindisable {display: none;}
+
+    div.mycontainer {flex-direction: column;}
+
+    .mycontainer img{
+        width: 440px;
+        align-items: center;
+    } */
+}
+
+@media screen and (max-width: 500px) {
+    /* .buttonred, .buttonborderred  {
+        padding: 6px;
+        font-size: small;
+    }
+
+    #signindisable {display: none;}
+
+    div.mycontainer {flex-direction: column;}
+
+    .mycontainer img{
+        width: 300px;
+        align-items: center;
+    } */
+}
