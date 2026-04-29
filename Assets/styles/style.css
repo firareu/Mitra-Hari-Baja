@@ -20,6 +20,10 @@ body {
     --color5: #C70119;
 }
 
+.overflow-hidden{
+    overflow: hidden;
+}
+
 .square-blue {
     top: 0;
     height: 100%;
@@ -305,6 +309,10 @@ video {
     border-radius: 4px;
 }
 
+.desc-bottom {
+    padding-bottom: 86px !important;
+}
+
 /* Product Section */
 .prd-text {
     align-items: center;
@@ -341,6 +349,10 @@ video {
     gap: 40px;
 }
 
+.prd-section-top{
+    padding-top: px !important;
+}
+
 .product-bottom {
     padding-bottom: 40px !important;
 }
@@ -355,6 +367,24 @@ video {
 
 .clip-ver-2 {
     clip-path: polygon(80% 0%, 100% 20%, 100% 100%, 20% 100%, 0% 80%, 0 0);
+}
+
+.circle-shape-prd-1 {
+    width: 340px !important;
+    height: 340px !important;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+.circle-shape-prd-2 {
+    width: 340px !important;
+    height: 340px !important;
+    position: absolute;
+    justify-self: flex-end;
+    bottom: 0;
+    transform: translate(50%, 20%);
+    z-index: -1;
 }
 
 /* Dist Section */

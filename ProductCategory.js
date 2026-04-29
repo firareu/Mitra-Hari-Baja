@@ -1,5 +1,7 @@
 document.getElementById("productCategory").innerHTML = `
-<div class="general-padding-r-l general-padding-t-b product-bottom">
+<div class="general-padding-r-l general-padding-t-b product-bottom clt-logo-wrapper prd-section-top overflow-hidden">
+    <div class="circle-shape bg-blur opacity-40 circle-shape-prd-1"></div>
+    <div class="circle-shape bg-blur opacity-40 circle-shape-prd-2"></div>
     <div class="general-flex-column prd-text">
         <p class="general-p">Apa yang kami tawarkan</p>
         <h2 class="general-h2">Produk Kami</h2>
