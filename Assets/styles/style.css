@@ -20,8 +20,44 @@ body {
     --color5: #C70119;
 }
 
+.text-outfit-bold{
+    font-family: var(--font-outfit);
+    font-weight: var(--font-weight-bold);
+}
+
+.text-outfit-regular{
+    font-family: var(--font-outfit);
+    font-weight: var(--font-weight-regular);
+}
+
+
+.text-blue{
+    color: var(--color1) !important;
+}
+
+.text-white{
+    color: var(--color1) !important;
+}
+
+
 .overflow-hidden{
     overflow: hidden;
+    position: relative;
+}
+
+.linear-gradient {
+    background: linear-gradient(var(--color3), var(--color3)) padding-box,
+                linear-gradient(-45deg, var(--color1), var(--color3)) border-box;
+}
+
+.circle-hollow {
+    border: 152px solid transparent;
+	border-radius: 50%;
+	width: 680px;
+	height: 680px;
+    position: absolute;
+    transform: translate(-48%, 132px);
+	z-index: -1;
 }
 
 .square-blue {
@@ -64,6 +100,10 @@ body {
 
 .opacity-40{
     opacity: .4;
+}
+
+.opacity-08{
+    opacity: .08;
 }
 
 
@@ -369,7 +409,8 @@ video {
     clip-path: polygon(80% 0%, 100% 20%, 100% 100%, 20% 100%, 0% 80%, 0 0);
 }
 
-.circle-shape-prd-1 {
+.circle-shape-prd-1, 
+.circle-shape-prd-2  {
     width: 340px !important;
     height: 340px !important;
     position: absolute;
@@ -378,9 +419,6 @@ video {
 }
 
 .circle-shape-prd-2 {
-    width: 340px !important;
-    height: 340px !important;
-    position: absolute;
     justify-self: flex-end;
     bottom: 0;
     transform: translate(50%, 20%);
@@ -441,6 +479,48 @@ video {
     left: 50%;
     transform: translate(-50%, 50%);
     z-index: -1;
+}
+
+/* Footer Section */
+
+#tempaltemo_footer .border-top,
+#tempaltemo_footer .border-bottom {
+    border-color: color-mix(in srgb, var(--color3) 10%, transparent) !important;
+}
+
+.logo {
+    font-weight: 500 !important;
+}
+
+.bg-dark-blue{
+    background-color: var(--color2);
+}
+
+.list-inline-item {
+    border-radius: 1px !important;
+    width: 40px;
+    height: 40px;
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+    border: var(--bs-border-width) var(--bs-border-style) color-mix(in srgb, var(--color3) 10%, transparent) !important;
+}
+
+.nav-icon {
+    color: white !important;
+    font-size: 14px;
+}
+
+.list-inline-item:hover {
+    background-color: var(--color3) !important;
+}
+
+.list-inline-item:hover .nav-icon {
+    color: var(--color2) !important;
+}
+
+.align-top {
+    margin-top: 4px;
 }
 
 @media screen and (max-width: 1024px) {
