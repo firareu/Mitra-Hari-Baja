@@ -97,7 +97,8 @@ body {
 
 .box-red {
     background-color: var(--color4);
-    padding: 12px 24px;
+    height: fit-content;
+    padding: 8px 24px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -487,6 +488,10 @@ li.nav-actions {
     z-index: 1;
 }
 
+.general-flex-row .nominal-layout {
+    align-items: center;
+}
+
 .box-white{
     background-color: var(--color3) !important;
     width: 216px;
@@ -556,23 +561,102 @@ li.nav-actions {
     /* for sumo sized (mac) screens */
 }
 
-@media only screen and (min-width: 1440px) {
-    /* styles for browsers larger than 1440px; */
+@media only screen and (min-width: 1520px)  {
+    
 }
 
-@media only screen and (min-width: 960px) {
+@media only screen and (max-width: 1280px) and (orientation:portrait) {
     /* styles for browsers larger than 960px; */
+    .general-padding-t-b {
+        padding-top: 72px;
+        padding-bottom: 58px;
+    }
+
+    .circle-hollow {
+        border: 156px solid transparent;
+        width: 740px;
+        height: 740px;
+        transform: translate(-60%, 124px);
+    }
+
+    .general-p {
+        font-size: 20px;
+    }
+
+    .general-h2 {
+        font-size: 76px;
+    }
+
+    .general-a {
+        font-size: 20px !important;
+        margin-top: 20px;
+    }
+
+    /*NAV SECTION*/
+    nav a {
+        font-size: 14px;
+    }
+
+    .logo img {
+        height: 32px;
+    }
+
+
+    .menu, .telephone {
+        font-size: 14px;
+    }
+
+
+    /* Hero Section */
+    #hero-text {
+        top: 50%;
+    }
+
+    #hero-text h1 {
+        max-width: 732px;
+        font-size: 104px;
+
+    }
+
+    #hero-text h2{
+        margin: 0px;
+        font-size: 28px;
+    }
+
+    #hero-text p{
+        font-size: 28px;
+    }
+
+    /* Desc Section */
+    #desc-h1 {
+        margin-right: 48px;
+        font-size: 52px;
+    }
+
+    .desc-p {
+        font-size: 20px;
+    }
+
+    #desc-img {
+        gap: 16px;
+        justify-content: center;
+    }
+
+    /* Client Section  */
+    .clt-logo-wrapper{
+        padding-top: 24px;
+    }
+
+    .clt-logo {
+        margin-left: 0;
+        width: 100%;
+    }
 }
 
-@media only screen and (device-width: 768px) {
-    /* default iPad screens */
+@media only screen and (max-width: 820px) and (orientation:portrait) {
     .general-padding-t-b {
         padding-top: 64px;
         padding-bottom: 52px;
-    }
-
-    .box-red {
-        padding: 4px 24px;
     }
 
     .circle-hollow {
@@ -591,7 +675,7 @@ li.nav-actions {
     }
 
     .general-a {
-        font-size: 20px;
+        font-size: 16px !important;
         margin-top: 20px;
     }
 
@@ -650,8 +734,107 @@ li.nav-actions {
         padding-top: 24px;
     }
 
+    .clt-logo {
+        margin-left: 0;
+        width: 100%;
+    }
     
 }
+
+@media only screen and (max-device-width: 610px) and (orientation:portrait) {
+    .general-padding-t-b {
+        padding-top: 64px;
+        padding-bottom: 52px;
+    }
+
+    .circle-hollow {
+        border: 156px solid transparent;
+        width: 740px;
+        height: 740px;
+        transform: translate(-60%, 124px);
+    }
+
+    .general-p {
+        font-size: 14px;
+    }
+
+    .general-h2 {
+        font-size: 52px;
+    }
+
+    .general-a {
+        font-size: 16px !important;
+        margin-top: 20px;
+    }
+
+    /*NAV SECTION*/
+    nav a {
+        font-size: 12px;
+    }
+
+    .logo img {
+        height: 24px;
+    }
+
+
+    .menu, .telephone {
+        font-size: 12px;
+    }
+
+
+    /* Hero Section */
+    #hero-text {
+        top: 52%;
+    }
+
+    #hero-text h1 {
+        max-width: 680px;
+        font-size: 80px;
+
+    }
+
+    #hero-text h2{
+        margin: 0px;
+        font-size: 24px;
+    }
+
+    #hero-text p{
+        font-size: 24px;
+    }
+
+    /* Desc Section */
+    #desc-h1 {
+        margin-right: 48px;
+        font-size: 40px;
+    }
+
+    .desc-p {
+        font-size: 14px;
+    }
+
+    #desc-img {
+        gap: 16px;
+        justify-content: center;
+    }
+
+    /* Client Section  */
+    .clt-logo-wrapper{
+        padding-top: 24px;
+    }
+
+    .clt-logo {
+        margin-left: 0;
+        width: 100%;
+    }
+
+
+}
+
+@media only screen and (max-device-width: 480px) {
+    /* styles for mobile browsers smaller than 480px; (iPhone) */
+}
+
+
 
 /* different techniques for iPad screening */
 @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
@@ -660,8 +843,4 @@ li.nav-actions {
 
 @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
     /* For landscape layouts only */
-}
-
-@media only screen and (max-device-width: 480px) {
-    /* styles for mobile browsers smaller than 480px; (iPhone) */
 }
