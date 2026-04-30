@@ -557,15 +557,109 @@ li.nav-actions {
     margin-right: 6px;
 }
 
+
+/* toggle navbar */
+.navbar-toggler {
+    border: 0 !important;
+}
+
 @media only screen and (min-width: 2000px) {
     /* for sumo sized (mac) screens */
 }
 
-@media only screen and (min-width: 1520px)  {
+@media only screen and (min-width: 1440px)  {
     
 }
 
 @media only screen and (max-width: 1280px) and (orientation:portrait) {
+    /* styles for browsers larger than 960px; */
+    .general-padding-t-b {
+        padding-top: 72px;
+        padding-bottom: 58px;
+    }
+
+    .circle-hollow {
+        border: 156px solid transparent;
+        width: 740px;
+        height: 740px;
+        transform: translate(-60%, 124px);
+    }
+
+    .general-p {
+        font-size: 20px;
+    }
+
+    .general-h2 {
+        font-size: 76px;
+    }
+
+    .general-a {
+        font-size: 20px !important;
+        margin-top: 20px;
+    }
+
+    /*NAV SECTION*/
+    nav a {
+        font-size: 14px;
+    }
+
+    .logo img {
+        height: 32px;
+    }
+
+
+    .menu, .telephone {
+        font-size: 14px;
+    }
+
+
+    /* Hero Section */
+    #hero-text {
+        top: 50%;
+    }
+
+    #hero-text h1 {
+        max-width: 732px;
+        font-size: 104px;
+
+    }
+
+    #hero-text h2{
+        margin: 0px;
+        font-size: 28px;
+    }
+
+    #hero-text p{
+        font-size: 28px;
+    }
+
+    /* Desc Section */
+    #desc-h1 {
+        margin-right: 48px;
+        font-size: 52px;
+    }
+
+    .desc-p {
+        font-size: 20px;
+    }
+
+    #desc-img {
+        gap: 16px;
+        justify-content: center;
+    }
+
+    /* Client Section  */
+    .clt-logo-wrapper{
+        padding-top: 24px;
+    }
+
+    .clt-logo {
+        margin-left: 0;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 1180px) and (orientation:landscape) {
     /* styles for browsers larger than 960px; */
     .general-padding-t-b {
         padding-top: 72px;
@@ -741,7 +835,35 @@ li.nav-actions {
     
 }
 
+@media only screen and (min-device-width: 610px) and (orientation:portrait) {
+    .offcanvas {
+        visibility      : visible;
+        position        : relative;
+        background      : none;
+        border          : none;
+        justify-content : end;
+        color           : red;
+    }
+}
+
 @media only screen and (max-device-width: 610px) and (orientation:portrait) {
+    .offcanvas {
+        width : 250px !important;
+    }
+
+    .offcanvas-start-lg {
+        top          : 0;
+        left         : 0;
+        border-right : 1px solid rgba(0, 0, 0, .2);
+        transform    : translateX(-100%);
+    }
+
+  .offcanvas-start-lg {
+    top          : 0;
+    left         : 0;
+    border-right : 1px solid rgba(0, 0, 0, .2);
+    transform    : translateX(-100%);
+  }
     .general-padding-t-b {
         padding-top: 64px;
         padding-bottom: 52px;
@@ -832,15 +954,4 @@ li.nav-actions {
 
 @media only screen and (max-device-width: 480px) {
     /* styles for mobile browsers smaller than 480px; (iPhone) */
-}
-
-
-
-/* different techniques for iPad screening */
-@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
-    /* For portrait layouts only */
-}
-
-@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
-    /* For landscape layouts only */
 }
