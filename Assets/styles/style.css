@@ -8,6 +8,7 @@ body {
     margin: 0px;
     font-family: sans-serif;
     --font-weight-light: 200;
+    --font-weight-semilight: 300;
     --font-weight-regular: 400;
     --font-weight-bold: 700;
     --font-weight-extra-bold: 900;
@@ -27,6 +28,21 @@ body {
 
 .text-outfit-regular{
     font-family: var(--font-outfit);
+    font-weight: var(--font-weight-regular);
+}
+
+.text-outfit-semilight{
+    font-family: var(--font-outfit);
+    font-weight: var(--font-weight-semilight);
+}
+
+.text-outfit-light{
+    font-family: var(--font-outfit);
+    font-weight: var(--font-weight-light);
+}
+
+.text-stencil-regular{
+    font-family: var(--font-stencil);
     font-weight: var(--font-weight-regular);
 }
 
@@ -51,17 +67,18 @@ body {
 }
 
 .circle-hollow {
-    border: 152px solid transparent;
+    border: 160px solid transparent;
 	border-radius: 50%;
-	width: 680px;
-	height: 680px;
+	width: 760px;
+	height: 760px;
     position: absolute;
-    transform: translate(-48%, 132px);
+    transform: translate(-52%, 152px);
 	z-index: -1;
 }
 
 .square-blue {
     top: 0;
+    left: 0;
     height: 100%;
     width: 100%;
     opacity: 0.4;
@@ -84,7 +101,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 4px;
     color: var(--color3);
     text-align: center;
     flex-shrink: 0;
@@ -130,6 +146,10 @@ body {
     display:flex;
 }
 
+.general-flew-wrap{
+    flex-wrap: wrap;
+}
+
 .general-flex-column{
     display:flex;
     flex-direction: column;
@@ -158,15 +178,17 @@ body {
 .general-p {
     margin: 0px;
     font-size: 20px;
-    font-family: var(--font-outfit);
-    font-weight: var(--font-weight-regular);
 }
 
 .general-h2 {
     margin: 0px;
     font-size: 64px;
-    font-family: var(--font-stencil);
-    font-weight: var(--font-weight-regular);
+}
+
+.general-a {
+    margin: 0px;
+    font-size: 20px;
+    margin-top: 20px;
 }
 
 /*NAV SECTION*/
@@ -197,9 +219,8 @@ nav a {
   color: var(--color2);
   text-decoration: none;
   font-weight: bold;
+  font-size: 16px;
 }
-
-nav a:hover {color: var(--color1)}
 
 .logo img {
     height: 40px;
@@ -211,6 +232,15 @@ nav a:hover {color: var(--color1)}
 .menu, .telephone {
     align-items: center;
     gap: 8px;
+    font-size: 16px;
+}
+
+.telephone:hover {
+    color: var(--color1) !important;
+}
+
+.telephone:hover span {
+    color: var(--color1) !important;
 }
 
 .menu {
@@ -236,13 +266,15 @@ nav a:hover {color: var(--color1)}
     position: relative;
 }
 
+.menu li a:hover {
+    color: var(--color1);
+}
+
 .menu li a.active {
     color: var(--color1);
     font-family: var(--font-outfit);
     font-weight: var(--font-weight-bold);
 }
-
-.menu li a:hover {color: var(--color1);}
 
 li.nav-actions {
   margin-left: auto;
@@ -252,23 +284,18 @@ li.nav-actions {
 }
 
 
-
 /*HERO SECTION*/
 .vid-fluid {
     width: 100%;
     height: 100%;
     min-height: 100vh;
     object-fit: cover;
-}
-
-video {
-    object-fit: contain;
-    overflow-clip-margin: content-box;
-    overflow: clip;
+    display: block;
 }
 
 .video-wrapper {
     position: relative;
+    min-height: 100vh; 
 }
 
 #hero-text {
@@ -286,31 +313,19 @@ video {
 #hero-text h1{
     margin: 0px;
     font-size: 74px;
-    font-family: var(--font-stencil);
-    font-weight: var(--font-weight-regular);
+    align-items: center;
+    text-align: center;
 }
 
 
 #hero-text h2{
     margin: 0px;
     font-size: 28px;
-    font-family: var(--font-outfit);
-    font-weight: var(--font-weight-bold);
 }
 
 #hero-text p{
     margin: 0px;
     font-size: 24px;
-    font-family: var(--font-outfit);
-    font-weight: var(--font-weight-light);
-}
-
-#hero-text a{
-    margin: 0px;
-    font-size: 20px;
-    margin-top: 32px;
-    font-family: var(--font-outfit);
-    font-weight: var(--font-weight-light);
 }
 
 
@@ -323,15 +338,16 @@ video {
     margin: 0px;
     margin-right: 48px;
     font-size: 56px;
-    font-family: var(--font-stencil);
-    font-weight: var(--font-weight-regular);
+}
+
+.desc-p {
+    font-size: 18px;
 }
 
 #desc-img {
-    align-items: center;
-    margin: 0px;
     gap: 8px;
     justify-content: space-between;
+    align-items: center;
     width: 100%;
 }
 
@@ -380,9 +396,22 @@ video {
 }
 
 .product-list {
-    width: 100%;
+    flex: 1;
     justify-content: center;
+}
+
+.general-flex-column.product-list {
+    flex: unset;          /* hapus flex:1 yang bikin melebar */
+    width: fit-content;   /* ikut lebar konten */
+}
+
+.prd-m-btm {
     margin-bottom: 40px;
+}
+
+.prd-gap{
+    gap: 40px;
+    justify-content: center;
 }
 
 .product-space {
@@ -482,7 +511,6 @@ video {
 }
 
 /* Footer Section */
-
 #tempaltemo_footer .border-top,
 #tempaltemo_footer .border-bottom {
     border-color: color-mix(in srgb, var(--color3) 10%, transparent) !important;
@@ -521,84 +549,119 @@ video {
 
 .align-top {
     margin-top: 4px;
+    margin-right: 6px;
 }
 
-@media screen and (max-width: 1024px) {
-    .mycontainer img{
-        width: 400px;
-        align-items: center;
+@media only screen and (min-width: 2000px) {
+    /* for sumo sized (mac) screens */
+}
+
+@media only screen and (min-width: 1440px) {
+    /* styles for browsers larger than 1440px; */
+}
+
+@media only screen and (min-width: 960px) {
+    /* styles for browsers larger than 960px; */
+}
+
+@media only screen and (device-width: 768px) {
+    /* default iPad screens */
+    .general-padding-t-b {
+        padding-top: 64px;
+        padding-bottom: 52px;
     }
-}
 
-@media screen and (max-width: 956px) {
-    /* #signindisable {display: none;}
+    .box-red {
+        padding: 4px 24px;
+    }
 
-    div.mycontainer {flex-direction: column;}
+    .circle-hollow {
+        border: 156px solid transparent;
+        width: 740px;
+        height: 740px;
+        transform: translate(-60%, 124px);
+    }
 
-    .mycontainer img{
-        width: 600px;
-        align-items: center;
-    } */
-}
+    .general-p {
+        font-size: 14px;
+    }
 
-@media screen and (max-width: 870px) {
-    /* .menu {
-        flex-direction: column;
-        align-items: center;
+    .general-h2 {
+        font-size: 52px;
+    }
+
+    .general-a {
+        font-size: 20px;
+        margin-top: 20px;
+    }
+
+    /*NAV SECTION*/
+    nav a {
+        font-size: 12px;
+    }
+
+    .logo img {
+        height: 24px;
+    }
+
+
+    .menu, .telephone {
+        font-size: 12px;
+    }
+
+
+    /* Hero Section */
+    #hero-text {
+        top: 52%;
+    }
+
+    #hero-text h1 {
+        max-width: 680px;
+        font-size: 80px;
+
+    }
+
+    #hero-text h2{
+        margin: 0px;
+        font-size: 24px;
+    }
+
+    #hero-text p{
+        font-size: 24px;
+    }
+
+    /* Desc Section */
+    #desc-h1 {
+        margin-right: 48px;
+        font-size: 40px;
+    }
+
+    .desc-p {
+        font-size: 14px;
+    }
+
+    #desc-img {
+        gap: 16px;
         justify-content: center;
-        width: 80%;
-        height: 100vh;
-        position: fixed;
-        top: 0;
-        right: -100%;
-        z-index: 100;
-        background-color: var(--color3);
-        transition: all 0.2s ease-in-out;
     }
-    .menu li {margin-top: 40px;}
-    .menu li a {padding: 10px;}
-    .open-menu , .close-menu {display: block;}
-    #check:checked ~ .menu {left: 0;}
 
-    #signindisable {display: none;}
+    /* Client Section  */
+    .clt-logo-wrapper{
+        padding-top: 24px;
+    }
 
-
-    div.mycontainer {flex-direction: column;}
-
-    .mycontainer img{
-        width: 600px;
-        align-items: center;
-    } */
+    
 }
 
-@media screen and (max-width: 600px) {
-    /* .buttonred, .buttonborderred  {
-        padding: 6px;
-        font-size: small;
-    }
-
-    #signindisable {display: none;}
-
-    div.mycontainer {flex-direction: column;}
-
-    .mycontainer img{
-        width: 440px;
-        align-items: center;
-    } */
+/* different techniques for iPad screening */
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
+    /* For portrait layouts only */
 }
 
-@media screen and (max-width: 500px) {
-    /* .buttonred, .buttonborderred  {
-        padding: 6px;
-        font-size: small;
-    }
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+    /* For landscape layouts only */
+}
 
-    #signindisable {display: none;}
-
-    div.mycontainer {flex-direction: column;}
-
-    .mycontainer img{
-        width: 300px;
-        align-items: center;
-    } */
+@media only screen and (max-device-width: 480px) {
+    /* styles for mobile browsers smaller than 480px; (iPhone) */
 }

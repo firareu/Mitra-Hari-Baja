@@ -1,6 +1,6 @@
 document.getElementById("footerSection").innerHTML = ` 
-<footer class="bg-dark-blue" id="tempaltemo_footer">
-    <div class="container">
+<footer class="bg-dark-blue general-padding-r-l" id="tempaltemo_footer">
+    <div>
         <div class="row">
 
             <div class="col-md-4 pt-5">
@@ -81,7 +81,7 @@ document.getElementById("footerSection").innerHTML = `
     </div>
 
     <div class="w-100 py-3">
-        <div class="container">
+        <div>
             <div class="row pt-2">
                 <div class="col-12">
                     <p class="text-left text-light text-outfit-regular">
