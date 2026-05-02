@@ -402,8 +402,8 @@ li.nav-actions {
 }
 
 .general-flex-column.product-list {
-    flex: unset;          /* hapus flex:1 yang bikin melebar */
-    width: fit-content;   /* ikut lebar konten */
+    flex: unset;        
+    width: fit-content;   
 }
 
 .prd-m-btm {
@@ -842,7 +842,6 @@ li.nav-actions {
         background      : none;
         border          : none;
         justify-content : end;
-        color           : red;
     }
 }
 
@@ -854,16 +853,9 @@ li.nav-actions {
     .offcanvas-start-lg {
         top          : 0;
         left         : 0;
-        border-right : 1px solid rgba(0, 0, 0, .2);
         transform    : translateX(-100%);
     }
 
-  .offcanvas-start-lg {
-    top          : 0;
-    left         : 0;
-    border-right : 1px solid rgba(0, 0, 0, .2);
-    transform    : translateX(-100%);
-  }
     .general-padding-t-b {
         padding-top: 64px;
         padding-bottom: 52px;
@@ -954,4 +946,153 @@ li.nav-actions {
 
 @media only screen and (max-device-width: 480px) {
     /* styles for mobile browsers smaller than 480px; (iPhone) */
+
+    .general-padding-t-b {
+        padding-top: 64px;
+        padding-bottom: 52px;
+    }
+
+    .circle-hollow {
+        border: 156px solid transparent;
+        width: 880px;
+        height: 880px;
+        transform: translate(-68%, 320px);
+    }
+
+    .linear-gradient {
+        background: linear-gradient(var(--color3), var(--color3)) padding-box,
+                    linear-gradient(-5deg, var(--color1), var(--color3)) border-box;
+    }
+
+    .general-p {
+        font-size: 14px;
+    }
+
+    .general-h2 {
+        font-size: 40px;
+    }
+
+    .general-a {
+        font-size: 12px !important;
+        margin-top: 20px;
+    }
+
+    /*NAV SECTION*/
+    nav a {
+        font-size: 8px;
+    }
+
+    .logo img {
+        height: 20px;
+    }
+
+
+    .menu, .telephone {
+        font-size: 8px;
+    }
+
+    .menu li {
+        visibility: hidden;
+    }
+
+
+    /* Hero Section */
+    #hero-text {
+        top: 52%;
+    }
+
+    #hero-text h1 {
+        max-width: 380px;
+        font-size: 44px;
+
+    }
+
+    #hero-text h2{
+        margin: 0px;
+        font-size: 14px;
+    }
+
+    #hero-text p{
+        font-size: 14px;
+    }
+
+    /* Desc Section */
+    .mobile-wrap{
+        flex-wrap: wrap;
+        gap: 24px;
+    }
+
+    #desc-h1 {
+        margin-right: 48px;
+        font-size: 40px;
+    }
+
+    .desc-p {
+        font-size: 14px;
+    }
+
+    #desc-img img {
+        width: 340px;
+        aspect-ratio: 4 / 3;
+        object-fit: cover;
+        border-radius: 4px;
+        flex-shrink: 0;
+    }
+
+    /* Product Section */
+    .circle-shape-prd-1, 
+    .circle-shape-prd-2  {
+        width: 160px !important;
+        height: 160px !important;
+        transform: translate(-56%, -70%);
+    }
+
+    .circle-shape-prd-2{
+        transform: translate(30%,20%);
+    }
+
+    .prd-text-category {
+        font-size: 20px;
+    }
+
+    .clip-ver-1,
+    .clip-ver-2 {
+        width: 140px;
+        height: 140px;
+    }
+
+    /* Dist Section */
+    .general-flex-row .nominal-layout {
+        flex-direction: column !important;
+        gap: 12px;
+    }
+
+    .nominal-maps-p {
+        font-size: 24px !important;
+    }
+
+
+    /* Client Section  */
+    .clt-logo-wrapper{
+        padding-top: 24px;
+        width: 300px !important;
+        margin: auto !important;
+    }
+
+    .clt-logo {
+        margin-left: 0;
+        width: 100%;
+        gap: 16px !important;
+    }
+
+    .circle-shape-clt {
+        width: 180px !important;
+        height: 180px !important;
+    }
+
+    .box-white {
+        padding: 0px 12px !important;
+        width: 88px;
+        height: 60px;
+    }
 }

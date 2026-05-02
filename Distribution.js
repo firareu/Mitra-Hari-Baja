@@ -10,7 +10,7 @@ document.getElementById("distributionMaps").innerHTML = `
                 <p class="general-p nominal-maps-p text-outfit-regular">14</p>
                 <p class="general-p text-outfit-regular">Kota</p>
             </div>
-            <div class="box-red general-flex-column">
+            <div class="box-red general-flex-column mobile-box-wrap-container">
                 <p class="general-p nominal-maps-p text-outfit-regular">5</p>
                 <p class="general-p text-outfit-regular">Pulau</p>
             </div>
